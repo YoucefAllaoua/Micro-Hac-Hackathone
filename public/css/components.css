@@ -27,10 +27,15 @@ ul {
 header {
 	padding-top: 20px;
 }
+
 header .container {
+	padding: 15px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+header .container .logo object {
+	width: 150px;
 }
 .fulled_button,
 .not_fulled_button {
@@ -101,5 +106,8 @@ footer .social_links {
 footer p {
 	font-size: 14px;
 	color: white;
+}
+footer .container .logo object {
+	width: 150px;
 }
 /* end the footer */
