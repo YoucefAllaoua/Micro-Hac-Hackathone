@@ -26,6 +26,7 @@ const getSortedMarketplaceData = async (req, res) => {
 }
 
 const addMarketplaceData = async (req, res) => {
+    const { title, desc, owner, category } = req.body;
     if(!title || !desc || !owner || !category) {
         throw new BadRequest("Please provide all required fields");
     }
@@ -35,5 +36,6 @@ const addMarketplaceData = async (req, res) => {
 
 module.exports = {
     getNbrofMarketplaceData,
-    getSortedMarketplaceData
+    getSortedMarketplaceData,
+    addMarketplaceData
 }
