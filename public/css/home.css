@@ -1,9 +1,7 @@
 :root {
 	--main-green: #06c69a;
 }
-html {
-	scroll-behavior: smooth;
-}
+
 section {
 	display: flex;
 	justify-content: space-between;
