@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/requestForm.css">
     <link rel="stylesheet" href="./css/components.css">
+    ,<link rel="stylesheet" href="./css/setData.css">
 
     <title>Document</title>
 </head>
@@ -25,7 +26,7 @@
     <!-- End the Header -->
     <!-- Start the form-->
     <form action="" class="form">
-        <h2>Request the unavailable data now!</h2>
+        <h2>Do you have a dataset that you would like to be published </h2>
         <div class="four-information">
             <div class="four full-name">
                 <label for="name">Full Name</label>
@@ -54,13 +55,34 @@
                 <input type="tel" name="name" id="name" placeholder="Your phone number must be Algerian">
             </div>
             <div class="info email">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Please make sure your email is valid">
+                <label for="Categorie">Categorie</label>
+                <select name="category" id="category">
+					<option selected name="" id="">Select category :</option>
+					<option name="" id="">Agriculture</option>
+					<option name="" id="">Environment</option>
+					<option name="" id="">Environment</option>
+					<option name="" id="">Other</option>
+					<option name="" id="">Industry</option>
+					<option name="" id="">Medical</option>
+					<option name="" id="">Medical</option>
+					<option name="" id="">Economics</option>
+				</select>
             </div>
-
         </div>
+        <div class="upload-image">
+            <div class="upload">
+                <p>Add a picture</p>
+                <input type="file" name="" id="">
+                <img src="./assets/upload_image.png" alt="">
+            </div>
+            <div class="text">
+                <p class="first">Add Picture</p>
+                <p>Please make sure the photo is relevant </p>
+            </div>
+        </div>
+     
         <div class="text">
-            <p>*Your request will be displayed to sellers for them to know what to provide on the market </p>
+            <p>*Your post will be displayed to buyers for them to know what is provided on the market</p>
         </div>
             <button class="fulled_button" type="submit">Submit</button>
         
