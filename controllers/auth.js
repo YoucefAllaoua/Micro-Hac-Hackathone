@@ -18,11 +18,11 @@ const login = async (req, res) => {
 }
 
 const register = async (req, res, next) => {
-    const { email, password } = req.body
-    if(!email || !password) {
+    const { email, password, name } = req.body
+    if(!email || !password || !name) {
         throw new BadRequest("Please provide email and password")
     }
-    const user = await User.create({ email, password })
+    const user = await User.create({ email, password, name })
     const token = await user.createJWT()
     res.cookie("token", token, {httpOnly: true, maxAge: 1000*60*60*24*10})
     return res.status(StatusCodes.CREATED).json({userID: user._id});
