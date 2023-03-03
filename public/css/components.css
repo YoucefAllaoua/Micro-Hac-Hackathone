@@ -120,5 +120,33 @@ footer .container .logo object {
 footer .container .social-links a {
 	transition: 0.3s;
 }
-footer .container .
+
 /* end the footer */
+
+/* start search bar */
+.search-bar {
+	padding-top: 50px;
+}
+.search-bar .container {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--footer-back);
+	border-radius: 10px;
+}
+.search-bar .container .content {
+	display: flex;
+	gap: 20px;
+}
+.search-bar .container .content select {
+	background-color: var(--footer-back);
+	color: white;
+	padding: 10px 15px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+}
+.search-bar .container input {
+	padding: 10px;
+	width: 350px;
+	border-radius: 10px;
+}

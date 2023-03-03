@@ -8,10 +8,10 @@ const getData = async () => {
 	data = data.data;
 	data = data.map((datum) => {
 		const { owner, title, desc, img, category } = datum;
-		console.log(datum);
-		return `<div class="datum">
+		console.log(`localhost:5000/images/${img}`);
+		return `<div class="datum">  
 					<div class="image">
-						<img src=${img} alt="" />
+						<img src=/images/${img} alt="" />
 					</div>
 					<div class="text">
 						<p class="title">${title}</p>
@@ -23,3 +23,7 @@ const getData = async () => {
 	data_container.innerHTML = data.join("");
 };
 getData();
+
+// the filter function :
+const select = document.querySelector("select");
+console.log(select);
