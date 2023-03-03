@@ -2,16 +2,15 @@ const link = "http://localhost:5000/api/v1/marketplace-data";
 
 method = { method: "GET" };
 
-const getData = async () => {
+const getData = async (url) => {
 	const data_container = document.querySelector(".data .container");
-	let { data } = await axios.get(link);
+	let { data } = await axios.get(url);
 	data = data.data;
 	data = data.map((datum) => {
 		const { owner, title, desc, img, category } = datum;
-		console.log(`localhost:5000/images/${img}`);
 		return `<div class="datum">  
 					<div class="image">
-						<img src=/images/${img} alt="" />
+						<img src="images/${img}" alt="" />
 					</div>
 					<div class="text">
 						<p class="title">${title}</p>
@@ -22,8 +21,10 @@ const getData = async () => {
 	});
 	data_container.innerHTML = data.join("");
 };
-getData();
+getData(link);
 
 // the filter function :
 const select = document.querySelector("select");
-console.log(select);
+select.addEventListener("change", (e) => {
+	getData(`http://localhost:5000/api/v1/marketplace-data?category=${e.target.value}`);
+});
