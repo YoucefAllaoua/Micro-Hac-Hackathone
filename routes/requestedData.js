@@ -1,8 +1,8 @@
 const express = require("express");
-const { getNbrofRequestedData, getAllRequestedData} = require("../controllers/requestedData");
+const { getNbrofRequestedData, getAllRequestedData, addDataRequest} = require("../controllers/requestedData");
 const router = express.Router();
 
-router.get("/",getAllRequestedData);
-router.get("/nbrofdata",getAllRequestedData);
+router.route("/").get(getAllRequestedData).post(addDataRequest);
+router.get("/nbrofdata",getNbrofRequestedData);
 
 module.exports = router;
