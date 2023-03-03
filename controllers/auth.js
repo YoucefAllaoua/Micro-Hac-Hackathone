@@ -3,6 +3,7 @@ const { BadRequest, UnauthorizedError, CustomAPIError } = require("../errors/ind
 const { StatusCodes } = require("http-status-codes")
 
 const login = async (req, res) => {
+    console.log(req.body)
     const { email, password } = req.body
     const user = await User.findOne({email})
     if(!user) {

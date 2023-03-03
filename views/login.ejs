@@ -37,9 +37,9 @@
             <object data="./assets/Palm recognition.svg"></object>
         </div>
         <div class="right">
-            <form action="/api/v1/auth/login" method="post">
-                <input type="email" placeholder="Enter your email adress" name="email">
-                <input type="password" placeholder="Password" name="password">
+            <form class="form">
+                <input type="email" placeholder="Enter your email adress" name="email" id="email">
+                <input type="password" placeholder="Password" name="password" id="password">
                 <div class="options">
                     <div class="remember">
                         <input type="checkbox" id="remember" name="remember">
@@ -68,6 +68,8 @@
         </div>
     </main>
     <script src="./js/home.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
