@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet" />
-    <title>Login</title>
+    <title>Register</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             </div>
             <ul class="links"></ul>
             <div class="login">
-                <a href="/login" class="fulled_button">REGISTER</a>
+                <a href="/login" class="fulled_button">LOGIN</a>
             </div>
         </div>
     </header>
@@ -37,9 +37,10 @@
             <object data="./assets/Palm recognition.svg"></object>
         </div>
         <div class="right">
-            <form action="/api/v1/auth/login" method="post">
-                <input type="email" placeholder="Enter your email adress" name="email">
-                <input type="password" placeholder="Password" name="password">
+            <form>
+                <input type="text" placeholder="Enter your full name">
+                <input type="email" placeholder="Enter your email adress">
+                <input type="password" placeholder="Password">
                 <div class="options">
                     <div class="remember">
                         <input type="checkbox" id="remember" name="remember">
@@ -47,7 +48,7 @@
                     </div>
                     <a href="#">Forgot password?</a>
                 </div>
-                <input type="submit" value="LOGIN">
+                <input type="submit" value="REGISTER">
                 <div class="hr">
                     <hr>
                     <span> Or continue with </span>
@@ -67,7 +68,7 @@
             </form>
         </div>
     </main>
-    <script src="./js/home.js" type="module"></script>
+    <script src="./js//home.js" type="module"></script>
 </body>
 
 </html>
