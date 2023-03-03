@@ -9,8 +9,7 @@ const MarketplaceDataSchema = new mongoose.Schema({
         required: [true, "Please provide a description"]
     },
     owner: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "User",
+        type: String,
         required: [true, "Please provide an owner"]
     },
     img: {
