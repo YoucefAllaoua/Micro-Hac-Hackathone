@@ -1,6 +1,7 @@
 /* that is the declaration section */
 :root {
 	--main-green: #06c69a;
+	--footer-back: #1e214e;
 }
 
 * {
@@ -36,8 +37,8 @@ header .container {
 	background-color: var(--main-green);
 	color: white;
 	font-weight: 600;
-	font-size: 20px;
-	line-height: 20px;
+	font-size: 16px;
+	line-height: 18px;
 	padding: 12px 24px;
 	border-radius: 50px;
 	transition: 0.3s;
@@ -55,13 +56,14 @@ header .container {
 	background-color: var(--main-green);
 	color: white;
 }
-header .container .links {
+.links {
 	display: flex;
 	gap: 40px;
+	list-style: none;
 }
 header .container .links a li {
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 18px;
 	line-height: 20px;
 	color: black;
 	transition: 0.3s;
@@ -70,3 +72,34 @@ header .container .links a li:hover {
 	color: var(--main-green);
 }
 /* end  header section */
+
+/* start the footer */
+footer {
+	background-color: var(--footer-back);
+	padding-top: 30px;
+}
+footer .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+footer .links li {
+	font-size: 18px;
+	line-height: 14px;
+	color: #aaaaaa;
+	transition: 0.3s;
+}
+footer .links li:hover {
+	color: var(--main-green);
+}
+footer .social_links {
+	display: flex;
+	gap: 20px;
+}
+footer p {
+	font-size: 14px;
+	color: white;
+}
+/* end the footer */

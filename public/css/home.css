@@ -18,8 +18,8 @@ section.main .content > object {
 	right: 0;
 }
 section.main h1 {
-	font-size: 100px;
-	line-height: 138px;
+	font-size: 60px;
+	line-height: 80px;
 	position: relative;
 }
 section.main .title {
@@ -36,7 +36,8 @@ section.main h1 .underlined object {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: -60px;
+	bottom: -40px;
+	width: 250px;
 }
 section.main .image {
 	overflow: visible;
@@ -51,9 +52,9 @@ section.main .buttons {
 	gap: 50px;
 }
 section.main .buttons a {
-	padding: 25px 27px;
+	padding: 18px;
 	font-weight: 300;
-	font-size: 28px;
+	font-size: 18px;
 }
 /* start the about section */
 .about {
@@ -83,12 +84,12 @@ section.main .buttons a {
 }
 .about .title div h1 {
 	font-weight: 900;
-	font-size: 100px;
+	font-size: 60px;
 	line-height: 138px;
 }
 .about .title .desc {
 	font-weight: 300;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 40px;
 }
 .about .image {
