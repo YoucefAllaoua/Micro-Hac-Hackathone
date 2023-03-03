@@ -1,26 +1,22 @@
 [
 	{
-		"name": "youcef",
-		"domain": "web developer ",
-		"id": "1",
-		"img": "./assets/face_one.jpg"
+		"link": "About",
+		"url": "./public/about.html",
+		"id": "1"
 	},
 	{
-		"name": "hmad",
-		"domain": "yaaraf koulch developer ",
-		"id": "2",
-		"img": "./assets/face_two.png"
+		"link": "Marketplace",
+		"url": "./public/market.html",
+		"id": "2"
 	},
 	{
-		"name": "iyad",
-		"domain": "UI UX",
-		"id": "3",
-		"img": "./assets/face_three.jpg"
+		"link": "Requested Data",
+		"url": "./public/requested.html",
+		"id": "3"
 	},
 	{
-		"name": "ATTOUI",
-		"domain": "Atoui developer ",
-		"id": "4",
-		"img": "./assets/face_four.png"
+		"link": "Contact us",
+		"url": "./public/contact.js",
+		"id": "4"
 	}
 ]

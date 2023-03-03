@@ -6,8 +6,9 @@ fetch(url)
 		return resolved.json();
 	})
 	.then((data) => {
-		const links_container_html = "";
-		data.map((ele) => {
-			return `<li>${ele.link}</li>`;
+		data = data.map((ele) => {
+			return `<a href=${ele.url} ><li class="link" >${ele.link}</li></a>`;
 		});
+		const links_container_html = data.join("");
+		links_container.innerHTML = links_container_html;
 	});
