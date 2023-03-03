@@ -1,17 +1,22 @@
 [
 	{
+		"link": "Home",
+		"url": "/public/home.html",
+		"id": "1"
+	},
+	{
 		"link": "About",
-		"url": "./public/about.html",
+		"url": "#about",
 		"id": "1"
 	},
 	{
 		"link": "Marketplace",
-		"url": "./public/market.html",
+		"url": "/public/market.html",
 		"id": "2"
 	},
 	{
 		"link": "Requested Data",
-		"url": "./public/requested.html",
+		"url": "/public/requested.html",
 		"id": "3"
 	},
 	{

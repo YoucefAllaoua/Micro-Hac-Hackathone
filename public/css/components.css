@@ -86,7 +86,6 @@ header .container .links a li:hover {
 
 /* start the footer */
 footer {
-	margin-top: 30px;
 	background-color: var(--footer-back);
 	padding-top: 30px;
 }

@@ -70,6 +70,7 @@ section.main .buttons a {
 /* start the about section */
 .about {
 	background-color: #f4f5f9;
+	padding-bottom: 50px;
 }
 .about .container {
 	padding: 15px;
@@ -152,14 +153,14 @@ section.main .buttons a {
 }
 /* start the contact section */
 .contact-us {
-	padding-top: 30px;
+	padding: 30px 0px;
 	background-color: #f4f5f9;
 }
 .contact-us .container {
 	padding: 15px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: flex-end;
 	gap: 40px;
 	flex-wrap: wrap;

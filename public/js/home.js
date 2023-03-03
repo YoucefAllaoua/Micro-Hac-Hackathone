@@ -7,6 +7,7 @@ fetch(url)
 	})
 	.then((data) => {
 		data = data.map((ele) => {
+			console.log(ele.url);
 			return `<a href=${ele.url} ><li class="link" >${ele.link}</li></a>`;
 		});
 		const links_container_html = data.join("");
