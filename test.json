@@ -1,0 +1,26 @@
+[
+	{
+		"name": "youcef",
+		"domain": "web developer ",
+		"id": "1",
+		"img": "./assets/face_one.jpg"
+	},
+	{
+		"name": "hmad",
+		"domain": "yaaraf koulch developer ",
+		"id": "2",
+		"img": "./assets/face_two.png"
+	},
+	{
+		"name": "iyad",
+		"domain": "UI UX",
+		"id": "3",
+		"img": "./assets/face_three.jpg"
+	},
+	{
+		"name": "ATTOUI",
+		"domain": "Atoui developer ",
+		"id": "4",
+		"img": "./assets/face_four.png"
+	}
+]

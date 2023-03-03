@@ -1,0 +1,46 @@
+/* that is the declaration section */
+:root {
+	--main-green: #06c69a;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    font-family: 'Inter', sans-serif;
+}
+ul {
+	list-style: none;
+}
+.container {
+	margin: auto;
+	width: 95%;
+	padding: 20px;
+}
+
+/* start header section */
+header {
+	padding-top: 20px;
+}
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.fulled_button {
+	background-color: var(--main-green);
+	color: white;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 12px 24px;
+	border-radius: 20px;
+}
+header .container .links {
+	display: flex;
+	gap: 20px;
+}
+/* end  header section */
