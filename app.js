@@ -12,6 +12,7 @@ const cors = require("cors");
 const notFound = require('./middlewares/not-found')
 const authMiddleware = require("./middlewares/authentication")
 const cookieParser = require("cookie-parser")
+app.use(cors());
 app.use(express.static("./public"))
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())

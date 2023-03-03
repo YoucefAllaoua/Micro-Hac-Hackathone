@@ -20,7 +20,7 @@ const getSortedMarketplaceData = async (req, res) => {
     if (req.query.category && categories.contains(req.query.category)) {
         const data = await MarketPlaceData.find({ category: req.query.category });
     } else {
-        throw new BadRequest("Invalid category");
+        const data = await MarketPlaceData.find();
     }
     return res.status(200).json({ data: data });
 }
