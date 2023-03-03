@@ -31,4 +31,4 @@ UserSchema.methods.verifyPass = async function(enteredPassword) {
     return isMatch;
 }
 
-module.exports = mongoose.model("User",UserSchema)
+module.exports = mongoose.model("User",UserSchema);

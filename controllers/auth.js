@@ -25,7 +25,7 @@ const register = async (req, res, next) => {
     const user = await User.create({ email, password })
     const token = await user.createJWT()
     res.cookie("token", token, {httpOnly: true, maxAge: 1000*60*60*24*10})
-    return res.status(StatusCodes.CREATED).json({userID: user._id, cart})
+    return res.status(StatusCodes.CREATED).json({userID: user._id});
 }
 
 module.exports = { login, register }
