@@ -54,17 +54,16 @@ header .container .logo object {
 	transition: 0.3s;
 }
 .fulled_button:hover {
-	background-color: white;
-	color: var(--main-green);
-	border: solid var(--main-green) 1px;
+	background-color: #03785d;
 }
 .not_fulled_button {
 	background-color: white;
 	color: var(--main-green);
+	border: solid var(--main-green) 1px;
+	transition: 0.3s;
 }
 .not_fulled_button:hover {
-	background-color: var(--main-green);
-	color: white;
+	transform: scale(1.05);
 }
 .links {
 	display: flex;
@@ -121,5 +120,5 @@ footer .container .logo object {
 footer .container .social-links a {
 	transition: 0.3s;
 }
-
+footer .container .
 /* end the footer */

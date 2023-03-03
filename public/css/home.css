@@ -1,5 +1,6 @@
 :root {
 	--main-green: #06c69a;
+	--footer-back: #1e214e;
 }
 
 section {
@@ -138,6 +139,7 @@ section.main .buttons a {
 	font-size: 35px;
 	margin-bottom: 10px;
 	font-weight: 600;
+	color: var(--footer-back);
 }
 
 .how-it-works .features .feature p {
