@@ -28,9 +28,11 @@ body {
 	border-radius: 10px;
 }
 .data .container {
+
 	padding: 5px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+	gap: 40px;
 }
 .data .container .datum {
 	background-color: white;
