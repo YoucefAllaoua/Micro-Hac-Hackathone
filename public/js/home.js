@@ -7,7 +7,6 @@ fetch(url)
 	})
 	.then((data) => {
 		data = data.map((ele) => {
-			console.log(ele.url);
 			return `<a href=${ele.url} ><li class="link" >${ele.link}</li></a>`;
 		});
 		const links_container_html = data.join("");
@@ -20,10 +19,12 @@ let links = document.querySelectorAll(".links a");
 
 links.forEach((ele) => {
 	ele.addEventListener("click", (e) => {
-		e.currentTarget.classList.contains("clicked");
+		e.currentTarget.classList.add("clicked");
 	});
 });
 // footer date year
 let year = document.querySelector(".year");
 let date = new Date();
-year.innerHTML = date.getFullYear();
+if (year) {
+	year.innerHTML = date.getFullYear();
+}
