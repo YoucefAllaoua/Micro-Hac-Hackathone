@@ -19,7 +19,7 @@ app.use(cookieParser())
 // routes
 app.use("/",viewsRouter);
 app.use("/api/v1/auth",authRouter);
-app.use("/api/v1/marketplace-data",authMiddleware,marketplaceDataRouter);
+app.use("/api/v1/marketplace-data", authMiddleware,marketplaceDataRouter);
 app.use("/api/v1/requested-data",authMiddleware,requestedDataRouter);
 
 // errors
