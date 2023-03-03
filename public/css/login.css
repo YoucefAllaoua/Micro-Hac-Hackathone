@@ -1,0 +1,101 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .left {
+    flex-basis: 60%;
+    margin-left: 150px;
+    position: relative;
+}
+
+main .left .shadow {
+    position: absolute;
+}
+
+main .right {
+    flex-basis: 40%;
+}
+
+main .right form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 75%;
+}
+
+main .right form input {
+    padding: 25px 15px;
+    background: #EFEFEF;
+    border-radius: 16px;
+}
+
+main .right form input[type="submit"] {
+    background-color: #06C69A;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #06C69A;
+}
+
+main .right form input[type="submit"]:hover {
+    background-color: white;
+    color: #06C69A;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+main .right form .options {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+main .right form .options .remember {
+    display: flex;
+    gap: 10px;
+}
+
+main .right form .options a {
+    color: black;
+}
+
+main .right form .options input[type="checkbox"] {
+    scale: 1.3;
+}
+
+main .right form .hr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+main .right form .hr span {
+    color: black;
+    display: block;
+    width: fit-content;
+}
+
+main .right form .hr hr {
+    width: 35%;
+    border: 1px solid black;
+}
+
+main .right form .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .right form .social a {
+    background-color: #EFEFEF;
+    background: #EFEFEF;
+    box-shadow: inset 0px 1px 15px rgba(149, 143, 143, 0.06);
+    border-radius: 16px;
+    padding: 15px 50px;
+}
