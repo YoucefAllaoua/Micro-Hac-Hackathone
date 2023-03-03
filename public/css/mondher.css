@@ -1,2 +1,37 @@
+<<<<<<< HEAD
 section.main {
+=======
+/* Start About  */
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background-color:#F4F5F9;
+    
+    
+}
+.about .title {
+    flex-basis: 40%;
+   
+}
+.about .title div h1 {
+    font-size: 40px;
+}
+.about .title .desc {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+}
+.about .image  {
+    flex-basis: 40%;
+}
+.about .image img {
+    width: 80%;
+>>>>>>> 35962248e573e3071fb9c902e296b711a368868c
 }

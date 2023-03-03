@@ -6,6 +6,8 @@ const connectDB = require("./db/connect")
 const errorHandlerMiddleware = require("./middlewares/error-handler")
 const authRouter = require("./routes/auth");
 const viewsRouter = require("./routes/views");
+const marketplaceDataRouter = require("./routes/marketplaceData");
+const requestedDataRouter = require("./routes/requestedData");
 const cors = require("cors");
 const notFound = require('./middlewares/not-found')
 const authMiddleware = require("./middlewares/authentication")
@@ -17,6 +19,8 @@ app.use(cookieParser())
 // routes
 app.use("/",viewsRouter);
 app.use("/api/v1/auth",authRouter);
+app.use("/api/v1/marketplace-data",authMiddleware,marketplaceDataRouter);
+app.use("/api/v1/requested-data",authMiddleware,requestedDataRouter);
 
 // errors
 app.use(errorHandlerMiddleware)

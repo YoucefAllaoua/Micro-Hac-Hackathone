@@ -16,6 +16,11 @@ const MarketplaceDataSchema = new mongoose.Schema({
     img: {
         type: String,
         required: [true, "Please provide an image"]
+    },
+    category: {
+        type: String,
+        required: [true, "Please provide a category"],
+        enum: ["Medical", "Agriculture", "Industry", "Environment", "Economics", "Other"]
     }
 })
 
