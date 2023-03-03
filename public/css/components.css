@@ -22,6 +22,9 @@ ul {
 	width: 95%;
 	padding: 20px 60px;
 }
+textarea {
+	resize: none;
+}
 
 /* start header section */
 header {
@@ -80,6 +83,7 @@ header .container .links a li:hover {
 
 /* start the footer */
 footer {
+	margin-top: 30px;
 	background-color: var(--footer-back);
 	padding-top: 30px;
 }
