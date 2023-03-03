@@ -7,14 +7,25 @@ section {
 	flex-wrap: nowrap;
 	overflow: visible;
 }
+/* start the main section */
 section.main .content {
 	flex-basis: 80%;
+	position: relative;
+}
+section.main .content > object {
+	position: absolute;
+	top: -50px;
+	right: 0;
 }
 section.main h1 {
 	font-size: 100px;
 	line-height: 138px;
 	position: relative;
 }
+section.main .title {
+	position: relative;
+}
+
 section.main h1 .unique {
 	color: var(--main-green);
 }
@@ -23,8 +34,9 @@ section.main h1 .underlined {
 }
 section.main h1 .underlined object {
 	position: absolute;
-	left: 0;
-	bottom: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -60px;
 }
 section.main .image {
 	overflow: visible;
@@ -42,4 +54,43 @@ section.main .buttons a {
 	padding: 25px 27px;
 	font-weight: 300;
 	font-size: 28px;
+}
+/* start the about section */
+.about {
+	padding-top: 50px;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	flex-wrap: wrap;
+	background-color: #f4f5f9;
+}
+
+.about .title {
+	flex-basis: 40%;
+}
+.about .title div {
+	width: fit-content;
+	position: relative;
+}
+.about .title div img {
+	width: fit-content;
+	position: absolute;
+	right: -50px;
+	top: -30px;
+}
+.about .title div h1 {
+	font-weight: 900;
+	font-size: 100px;
+	line-height: 138px;
+}
+.about .title .desc {
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 40px;
+}
+.about .image {
+	flex-basis: 40%;
 }
