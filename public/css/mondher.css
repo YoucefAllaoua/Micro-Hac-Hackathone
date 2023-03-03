@@ -1,0 +1,101 @@
+/* Start About  */
+
+.about {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	flex-wrap: wrap;
+	background-color: #f4f5f9;
+}
+.about .title {
+	flex-basis: 40%;
+}
+.about .title div h1 {
+	font-size: 40px;
+}
+.about .title .desc {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 40px;
+}
+.about .image {
+	flex-basis: 40%;
+}
+.about .image img {
+	width: 80%;
+}
+
+/* End About  */
+
+/* Start contact*/
+.contact-us {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	flex-wrap: wrap;
+	background-color: #f4f5f9;
+}
+.contact-us .text {
+	flex-basis: 48%;
+}
+.contact-us .text h1 {
+	font-size: 40px;
+}
+.icons .first-icon,
+.icons .second-icon,
+.icons .third-icon {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+.icons .first-icon .par .first-par,
+.icons .second-icon .par .first-par,
+.icons .third-icon .par .first-par {
+	font-weight: 600;
+	color: black;
+}
+.icons .first-icon .par p,
+.icons .second-icon .par p,
+.icons .third-icon .par p {
+	font-weight: 300;
+	color: #817b7b;
+}
+
+.form {
+	flex-basis: 25%;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #1e214e;
+	padding: 15px;
+	border-radius: 5px;
+}
+.form input,
+.form textarea {
+	width: 100%;
+	height: 40px;
+	border-radius: 10px;
+	border: 1px solid #e5e5e5;
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+.form textarea {
+	height: 100px;
+	color: #8d8888;
+	padding-top: 10px;
+}
+.form .fulled_button {
+	width: 100%;
+}
