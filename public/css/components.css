@@ -3,7 +3,9 @@
 	--main-green: #06c69a;
 	--footer-back: #1e214e;
 }
-
+html {
+	scroll-behavior: smooth;
+}
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -116,4 +118,8 @@ footer p {
 footer .container .logo object {
 	width: 150px;
 }
+footer .container .social-links a {
+	transition: 0.3s;
+}
+
 /* end the footer */
