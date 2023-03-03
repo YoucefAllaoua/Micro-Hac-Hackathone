@@ -31,7 +31,13 @@ const addMarketplaceData = async (req, res) => {
     if(!title || !desc || !owner || !category) {
         throw new BadRequest("Please provide all required fields");
     }
-    const data = await MarketPlaceData.create(req.body);
+    const data = await MarketPlaceData.create({
+        title,
+        desc,
+        owner,
+        category,
+        img: req.file.path
+    });
     return res.status(201).json({ data: data });
 }
 
