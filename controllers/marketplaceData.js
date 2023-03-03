@@ -18,7 +18,7 @@ const getNbrofMarketplaceData = async (req, res) => {
 const getSortedMarketplaceData = async (req, res) => {
     const categories = ["Medical", "Agriculture", "Industry", "Environment", "Economics", "Other"];
     let data;
-    if (req.query.category && categories.contains(req.query.category)) {
+    if (req.query.category && categories.includes(req.query.category)) {
         data = await MarketPlaceData.find({ category: req.query.category });
     } else {
         data = await MarketPlaceData.find();
