@@ -12,13 +12,16 @@
 	outline: none;
 	font-family: "Inter", sans-serif;
 }
+section {
+	padding-top: 50px;
+}
 ul {
 	list-style: none;
 }
 .container {
 	margin: auto;
 	width: 95%;
-	padding: 20px;
+	padding: 20px 60px;
 }
 
 /* start header section */
@@ -30,14 +33,29 @@ header .container {
 	justify-content: space-between;
 	align-items: center;
 }
-.fulled_button {
+.fulled_button,
+.not_fulled_button {
 	background-color: var(--main-green);
 	color: white;
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 20px;
 	padding: 12px 24px;
-	border-radius: 20px;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+.fulled_button:hover {
+	background-color: white;
+	color: var(--main-green);
+	border: solid var(--main-green) 1px;
+}
+.not_fulled_button {
+	background-color: white;
+	color: var(--main-green);
+}
+.not_fulled_button:hover {
+	background-color: var(--main-green);
+	color: white;
 }
 header .container .links {
 	display: flex;
@@ -48,5 +66,9 @@ header .container .links a li {
 	font-size: 24px;
 	line-height: 20px;
 	color: black;
+	transition: 0.3s;
+}
+header .container .links a li:hover {
+	color: var(--main-green);
 }
 /* end  header section */

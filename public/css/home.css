@@ -1,0 +1,45 @@
+:root {
+	--main-green: #06c69a;
+}
+section {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	overflow: visible;
+}
+section.main .content {
+	flex-basis: 80%;
+}
+section.main h1 {
+	font-size: 100px;
+	line-height: 138px;
+	position: relative;
+}
+section.main h1 .unique {
+	color: var(--main-green);
+}
+section.main h1 .underlined {
+	position: relative;
+}
+section.main h1 .underlined object {
+	position: absolute;
+	left: 0;
+	bottom: -50px;
+}
+section.main .image {
+	overflow: visible;
+	position: relative;
+}
+section.main .image object {
+	max-width: 100%;
+}
+
+section.main .buttons {
+	display: flex;
+	gap: 50px;
+}
+section.main .buttons a {
+	padding: 25px 27px;
+	font-weight: 300;
+	font-size: 28px;
+}
