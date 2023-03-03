@@ -69,6 +69,9 @@ header .container .logo object {
 	gap: 40px;
 	list-style: none;
 }
+.links li.clicked {
+	color: #06c69a;
+}
 header .container .links a li {
 	font-weight: 400;
 	font-size: 18px;

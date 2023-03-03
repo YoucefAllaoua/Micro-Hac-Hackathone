@@ -14,7 +14,14 @@ fetch(url)
 			container.innerHTML = links_container_html;
 		});
 	});
+// add active class to the clicked
+let links = document.querySelectorAll(".links a");
 
+links.forEach((ele) => {
+	ele.addEventListener("click", (e) => {
+		e.currentTarget.classList.contains("clicked");
+	});
+});
 // footer date year
 let year = document.querySelector(".year");
 let date = new Date();

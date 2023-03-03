@@ -16,7 +16,7 @@
 	},
 	{
 		"link": "Contact us",
-		"url": "./public/contact.js",
+		"url": "#contact",
 		"id": "4"
 	}
 ]

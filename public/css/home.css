@@ -11,16 +11,22 @@ section {
 	overflow: visible;
 }
 /* start the main section */
+section.main {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
 section.main .content {
 	position: relative;
 }
 section.main .content h1 {
 	max-width: 700px;
+	width: fit-content;
+	line-height: 100px;
 }
 section.main .content > object {
 	position: absolute;
 	top: -20px;
-	right: 50px;
+	right: 110px;
 }
 section.main h1 {
 	font-size: 70px;
@@ -146,6 +152,7 @@ section.main .buttons a {
 }
 /* start the contact section */
 .contact-us {
+	padding-top: 30px;
 	background-color: #f4f5f9;
 }
 .contact-us .container {
@@ -156,6 +163,14 @@ section.main .buttons a {
 	align-items: flex-end;
 	gap: 40px;
 	flex-wrap: wrap;
+}
+.contact-us .container h1 {
+	position: relative;
+}
+.contact-us .container h1 object {
+	position: absolute;
+	top: -50px;
+	right: -90px;
 }
 .contact-us .text {
 	flex-basis: 48%;
