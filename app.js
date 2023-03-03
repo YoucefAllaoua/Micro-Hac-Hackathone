@@ -4,16 +4,19 @@ const express = require("express");
 const app = express();
 const connectDB = require("./db/connect")
 const errorHandlerMiddleware = require("./middlewares/error-handler")
-const authRouter = require("./routes/auth")
+const authRouter = require("./routes/auth");
+const viewsRouter = require("./routes/views");
 const cors = require("cors");
 const notFound = require('./middlewares/not-found')
 const authMiddleware = require("./middlewares/authentication")
 const cookieParser = require("cookie-parser")
 app.use(express.static("./public"))
+app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(cookieParser())
 // routes
-app.use("/api/v1/auth",authRouter)
+app.use("/",viewsRouter);
+app.use("/api/v1/auth",authRouter);
 
 // errors
 app.use(errorHandlerMiddleware)
