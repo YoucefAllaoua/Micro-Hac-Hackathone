@@ -7,7 +7,15 @@ body {
 	background-color: var(--gray);
 	overflow-x: hidden;
 }
+.users .container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
 .users .container .user {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
