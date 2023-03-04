@@ -1,5 +1,5 @@
 const express = require("express");
-const {login, register, home, success, logout, marketplace, requestedData} = require("../controllers/views")
+const {login, register, home, success, logout, marketplace, requestedData, dataRequest} = require("../controllers/views")
 const authMiddleware = require("../middlewares/authentication")
 const checkLoggedIn = require("../middlewares/check-logged-in")
 const notLoggedInTest = require("../middlewares/not-logged-in")
@@ -12,6 +12,7 @@ router.get("/register",checkLoggedIn, register)
 router.get("/marketplace", notLoggedInTest, marketplace)
 router.get("/requested-data", notLoggedInTest, requestedData)
 router.get("/logout", logout)
+router.get("/create-data-request", notLoggedInTest, dataRequest)
 router.get("/images/:id", (req, res) => {
     res.sendFile(path.join(__dirname, `../uploads/${req.params.id}`), err => {
         if(err) {
