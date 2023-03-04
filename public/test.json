@@ -1,12 +1,12 @@
 [
 	{
 		"link": "Home",
-		"url": "/",
+		"url": "/public/home.html",
 		"id": "1"
 	},
 	{
 		"link": "About",
-		"url": "#about",
+		"url": "/public/home.html#about",
 		"id": "1"
 	},
 	{
@@ -21,7 +21,7 @@
 	},
 	{
 		"link": "Contact us",
-		"url": "#contact",
+		"url": "/public/home.html#contact",
 		"id": "4"
 	}
 ]
