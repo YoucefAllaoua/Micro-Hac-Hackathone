@@ -1,6 +1,6 @@
 // display the links in the header
 let links_container = document.querySelectorAll(".links");
-let url = "../../test.json";
+let url = "../test.json";
 fetch(url)
 	.then((resolved) => {
 		return resolved.json();

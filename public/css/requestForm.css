@@ -1,143 +1,72 @@
-.form {
-  border: solid 2px#06C69A;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items : flex-start;
-  margin: 40px;
-  padding: 20px 40px;
-
-  border-radius: 10px;
-  width: 70%;
-  margin-left: 15%;
-    
+:root {
+	--main-green: #06c69a;
+	--footer-back: #1e214e;
 }
-.form h2 {
-    padding: 6px 47px;
-    margin-bottom: 20px;
-    color: #1E214E;
-    
+form {
+	padding-top: 100px;
+	width: 100%;
+	border: solid 3px var(--main-green);
+	border-radius: 20px;
+	padding: 20px;
 }
-.form .four-information, 
-.form .info {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
+form h3 {
+	margin: 40px 0px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 20px;
 
+	color: #1e214e;
+}
+.row:not(--lasts-chile) {
+	margin-bottom: 20px;
 }
 
-.form .four-information .four label,
-.form .description label
- {
-    display: block;
-    padding: 6px 10px;
-    font-size: 12px;
-    color: #1E214E;
-    font-weight: 500;
-    
+.row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+}
+.row .input_box {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex: 1;
+}
+.row .input_box input,
+.row .input_box textarea {
+	border: solid 2px var(--main-green);
+	width: 100%;
+	padding: 15px;
+	color: rgb(108, 104, 104);
+	border-radius: 10px;
 }
 
-.form .four-information .four{
-    width: 40%;
-    margin-left: 40px;
+.row .input_box {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 15px;
+	color: #1e214e;
 }
 
-
-
-.form .four-information .four input, 
-.description input,
-.info input {
-    border: solid 2px #06C69A;
-    border-radius: 15px;
-    height: 40px;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    font-size: 11px;
-
-    
+.note {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #817b7b;
+	margin-top: 40px;
 }
-.form .description {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
+.button_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
-
-.form .description input {
-    margin-left: 40px;
-    width: 95%;
-    height: 70px;
-    display: block;
-   
-}
-.form .description label {
-    display: block;
-    padding: 6px 57px;
-    font-size: 12px;
-}
-.form .info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.form .info label {
-    margin-left: 10%;
-}
-.form .info input {
-    width: 80%;
-    margin-left: 10%;
-    
-}
-.form .info .email input {
-    margin-left: 20%;
-    font-size: 12px;
-    color: #1E214E;
-    font-weight: 500;
-    
-}
-.form .info .phone label {
-    margin-left: 12%;
-}
-.form .info .email label {
-    margin-left: 21%;
-}
-
-.form .info .email label,
-.form .info .phone label
- {
-    font-size: 12px;
-    color: #1E214E;
-    font-weight: 500;
-    padding-bottom: 5px;
-    
-}
-.form .info .email, .form .info .phone {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content:  space-between;
-    width: 50%;
-}
-.form .text {
-    width: 100%;
-    margin-top: 10px;
-}
-.form .text p {
-    font-size: 12px;
-    color: #817B7B;
-    font-weight: 500;
-    padding-bottom: 5px;
-    margin-left: 20%;
-}
-.fulled_button {
-    width: 50%;
-    border-radius: 25px;
-    margin-top: 10px;
-    margin-left: 25%;
-    
+.button_container button {
+    margin-top: 100px;
+	border-radius: 10px;
+	padding: 20px;
+	width: 30%;
 }

@@ -5,15 +5,20 @@
 }
 body {
 	background-color: var(--gray);
+	overflow-x: hidden;
 }
 
 .data .container {
+	z-index: 100;
 	padding: 20px 5px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
 	gap: 40px;
+	position: relative;
 }
 .data .container .datum {
+	position: relative;
+	z-index: 100;
 	background-color: white;
 	padding: 10px;
 	border-radius: 20px;
@@ -52,4 +57,12 @@ body {
 .prov {
 	font-size: 15px;
 	line-height: 20px;
+}
+.first {
+	top: 50px;
+	left: -600px;
+}
+.second {
+	top: 250px;
+	left: 1200px;
 }

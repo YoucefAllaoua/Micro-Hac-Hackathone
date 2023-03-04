@@ -31,13 +31,21 @@ textarea {
 /* start header section */
 header {
 	padding-top: 20px;
+	position: relative;
+	z-index: 5;
 }
 
 header .container {
+	position: relative;
+	z-index: 5;
 	padding: 15px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+header .container {
+	position: relative;
+	z-index: 5;
 }
 header .container .logo object {
 	width: 150px;
@@ -125,9 +133,13 @@ footer .container .social-links a {
 
 /* start search bar */
 .search-bar {
+	position: relative;
+	z-index: 10;
 	padding-top: 50px;
 }
 .search-bar .container {
+	position: relative;
+	z-index: 10;
 	display: flex;
 	justify-content: space-between;
 	background-color: var(--footer-back);
@@ -149,4 +161,18 @@ footer .container .social-links a {
 	padding: 10px;
 	width: 350px;
 	border-radius: 10px;
+}
+
+/* shadow */
+.shadow {
+	position: absolute;
+	width: 850px;
+	height: 850px;
+	left: -400px;
+	top: -400px;
+	z-index: -10;
+	background: #06c69a;
+	filter: blur(800px);
+	opacity: 0.3;
+	border-radius: 41px;
 }

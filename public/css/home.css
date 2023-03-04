@@ -77,6 +77,8 @@ section.main .buttons a {
 	justify-content: space-between;
 	align-items: center;
 	gap: 40px;
+	position: relative;
+	z-index: 5;
 }
 
 .about .title {
@@ -105,6 +107,12 @@ section.main .buttons a {
 .about .image {
 	flex-basis: 40%;
 }
+.about {
+	position: relative;
+	z-index: 5;
+	overflow: hidden;
+}
+
 /* start how it work section */
 .how-it-works .container {
 	padding: 15px;
@@ -121,40 +129,54 @@ section.main .buttons a {
 	right: -75px;
 	top: -25px;
 }
-
-.how-it-works .features {
-	display: flex;
-	gap: 50px;
-	flex-wrap: wrap;
+.how-it-works .content {
+	background-color: var(--footer-back);
+	padding-top: 500px;
+	padding-bottom: 50px;
 }
-
-.how-it-works .features .feature {
+.how-it-works .content {
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	background-color: var(--footer-back);
+	justify-content: space-evenly;
+	border-radius: 20px;
+	padding: 100px 0px;
+}
+.how-it-works .content .element,
+.how-it-works .content .element .text {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+}
+.how-it-works .content .element .text {
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 30px;
+}
+.how-it-works .content .element ul {
+	margin-left: 30px;
+	list-style: initial;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	flex-direction: center;
 	gap: 20px;
 }
-
-.how-it-works .features .feature span {
-	font-size: 35px;
-	margin-bottom: 10px;
-	font-weight: 600;
-	color: var(--footer-back);
+.how-it-works .content .element h5 {
+	font-weight: 500;
+	font-size: 40px;
+	color: white;
 }
 
-.how-it-works .features .feature p {
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 36px;
-}
-
-.how-it-works .features .feature object {
-	width: 150px;
-}
 /* start the contact section */
 .contact-us {
 	padding: 30px 0px;
 	background-color: #f4f5f9;
+	position: relative;
+	z-index: 5;
+	overflow: hidden;
 }
 .contact-us .container {
 	padding: 15px;
@@ -163,6 +185,7 @@ section.main .buttons a {
 	justify-content: space-between;
 	align-items: flex-end;
 	gap: 40px;
+	z-index: 5;
 	flex-wrap: wrap;
 }
 .contact-us .container h1 {
@@ -235,6 +258,7 @@ section.main .buttons a {
 
 .form {
 	flex-basis: 1;
+	z-index: 5;
 }
 .form {
 	display: flex;
@@ -262,7 +286,9 @@ section.main .buttons a {
 .form .fulled_button {
 	width: 100%;
 }
-
+.contact-us .shadow {
+	left: 1000px;
+}
 /* end the contact section */
 
 /*  */
