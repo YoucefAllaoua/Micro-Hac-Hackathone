@@ -7,7 +7,7 @@ form {
 	width: 100%;
 	border: solid 3px var(--main-green);
 	border-radius: 20px;
-	padding: 20px;
+	padding: 0px 60px;
 }
 form h3 {
 	margin: 40px 0px;
@@ -65,7 +65,7 @@ form h3 {
 	width: 100%;
 }
 .button_container button {
-    margin-top: 100px;
+	margin-top: 100px;
 	border-radius: 10px;
 	padding: 20px;
 	width: 30%;
