@@ -1,18 +1,18 @@
-const {StatusCodes} = require("http-status-codes")
+const { StatusCodes } = require("http-status-codes")
 
-const login = async (req,res) => {
+const login = async (req, res) => {
     res.render("login.ejs")
 }
 
-const register = (req,res) => {
+const register = (req, res) => {
     res.render("register.ejs")
 }
 
-const home = (req,res) => {
-    res.render("home.ejs")
+const home = (req, res) => {
+    res.render("home.ejs");
 }
 
-const success = (req,res) => {
+const success = (req, res) => {
     res.redirect("/")
 }
 
@@ -24,20 +24,20 @@ const logout = (req, res) => {
     res.redirect("/login")
 }
 
-const marketplace = (req,res) => {
+const marketplace = (req, res) => {
     res.render("marketplace.ejs");
 }
 
-const requestedData = (req,res) => {
+const requestedData = (req, res) => {
     res.render("requestedData.ejs");
 }
 
-const dataRequest = (req,res) => {
+const dataRequest = (req, res) => {
     res.render("create-data-request.ejs");
 }
 
-const dataPost = (req,res) => {
+const dataPost = (req, res) => {
     res.render("publishData.ejs");
 }
 
-module.exports = {login, register, home, success, logout, marketplace, requestedData, dataRequest, dataPost}
+module.exports = { login, register, home, success, logout, marketplace, requestedData, dataRequest, dataPost }
