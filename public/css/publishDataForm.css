@@ -44,3 +44,7 @@
 	color: #817b7b;
     margin-top: 10px;
 }
+
+input[type="file"] {
+	display: none;
+}
