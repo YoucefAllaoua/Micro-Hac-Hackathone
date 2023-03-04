@@ -60,6 +60,7 @@ header .container .logo object {
 	padding: 12px 24px;
 	border-radius: 50px;
 	transition: 0.3s;
+	cursor: pointer;
 }
 .fulled_button:hover {
 	background-color: #03785d;

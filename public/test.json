@@ -1,7 +1,7 @@
 [
 	{
 		"link": "Home",
-		"url": "/public/home.html",
+		"url": "/",
 		"id": "1"
 	},
 	{
@@ -11,12 +11,12 @@
 	},
 	{
 		"link": "Marketplace",
-		"url": "/public/market.html",
+		"url": "/marketplace",
 		"id": "2"
 	},
 	{
 		"link": "Requested Data",
-		"url": "/public/requestData.html",
+		"url": "/requested-data",
 		"id": "3"
 	},
 	{
