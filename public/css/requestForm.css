@@ -3,11 +3,10 @@
 	--footer-back: #1e214e;
 }
 form {
-	padding-top: 100px;
 	width: 100%;
 	border: solid 3px var(--main-green);
 	border-radius: 20px;
-	padding: 0px 60px;
+	padding: 100px 60px;
 }
 form h3 {
 	margin: 40px 0px;
