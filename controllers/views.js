@@ -36,4 +36,8 @@ const dataRequest = (req,res) => {
     res.render("create-data-request.ejs");
 }
 
-module.exports = {login, register, home, success, logout, marketplace, requestedData, dataRequest}
+const dataPost = (req,res) => {
+    res.render("publishData.ejs");
+}
+
+module.exports = {login, register, home, success, logout, marketplace, requestedData, dataRequest, dataPost}
